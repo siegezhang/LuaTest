@@ -7,7 +7,7 @@
 --- lua中的table表示所有的东西，但是table本身是没有方法的，
 ---metatable可以去扩展表的一些方法。元表和表是一一对应的，
 ---有setmetatable去设置元表，也可以通过getmetatable去获取元表
-
+local test_module=require("module_test")
 tA = { 1, 3 }
 tB = { 5, 7 }
 
@@ -54,3 +54,5 @@ print(mytable.key1, mytable.key2)
 ---lua这个表就是一个对象，拥有类和继承的概念。虽然没有提供私有性机制，但是却可以用其他的方法提供访问控制，
 ---主要思想是用两个表表示一个对象，一个用来保存对象的状态，
 ---一个用来保存对象的操作；还有一种对偶表示的方法，将self作为自己的key
+
+test_module.testFunction()
