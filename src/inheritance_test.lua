@@ -5,6 +5,7 @@
 ---
 
 --- A base class
+---https://juejin.cn/post/6844903511990222855#heading-25
 Account = { balance = 0 }
 
 -- Lua hide `self` when using *colon operator*, a syntactic sugar
