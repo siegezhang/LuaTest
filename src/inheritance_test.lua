@@ -8,6 +8,9 @@
 ---https://juejin.cn/post/6844903511990222855#heading-25
 Account = { balance = 0 }
 
+--a and b：a为true时，返回b,否则返回a.      a and b=a?b:a
+--a or b：a为false时，返回b，否则返回a.     a or b=a?a:b
+
 -- Lua hide `self` when using *colon operator*, a syntactic sugar
 function Account:new(o)
     -- A hidden `self` refers to table `Account`
