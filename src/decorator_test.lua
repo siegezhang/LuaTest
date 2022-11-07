@@ -70,10 +70,9 @@ random = docstring [[Compute random number.]] ..
         function(n)
             return math.random(n)
         end
-
 --The function decorators can be implemented basically in this way:
 
-
+random(12)
 
 
 --The use of an operator (..) here between the function decorator and the function avoids the parenthesis around the function and makes chaining decorators nicer. We want this operator to have right associativity, so the only choices for this operator are .. and ^.
